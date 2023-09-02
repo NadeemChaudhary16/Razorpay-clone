@@ -1,0 +1,250 @@
+/* card1 */
+.featureCardSVG{
+    stroke-opacity: 0.15;
+}
+.card::after{
+    content: "";
+    background-image: url(./Images/features-wave.svg);
+    z-index: 1000;
+    position: absolute;
+    height: 3.5rem;
+    width: 5rem;
+    right:0;
+    bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+}
+.card:hover::after{
+    opacity:1;
+}
+.card:hover .featureCardSVG{
+    transition: all 0.2s ease;
+    filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+    /* box shadow not used because it gives shadow to box not content */
+    stroke-opacity: 0;
+
+}
+.card:hover .featureCardIcon{
+    background: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 22px rgba(202, 202, 202, 0.25);
+}
+.qna{
+    border: 1px solid rgba(42, 134, 243, 0.32);
+    background:linear-gradient(180deg, rgba(74, 144, 245, 0.21) -34.7%, rgba(125, 186, 244, 0.063) 100%, rgba(125, 186, 244, 0.1295) 100%);
+}
+.productLink:hover a,
+.productLink:hover .feather{
+    color: white;
+}
+
+/* Banking Section */
+#BankingSection{
+    background-image: url(./Images/feature-section-2BG.svg);
+    background-position: -400px 0px;
+    background-size: calc(100% * 2) 100%;
+}
+
+/* Card2 */
+.featureCard2SVG{
+    stroke-opacity: 0.80;
+}
+.card2::after{
+    content: "";
+    background-image: url(./Images/features2-wave.svg);
+    z-index: 1000;
+    position: absolute;
+    height: 4rem;
+    width: 7rem;
+    right:0;
+    bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+}
+.card2:hover::after{
+    opacity:1;
+}
+.card2:hover .featureCard2SVG{
+    transition: all 0.2s ease;
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+    /* box shadow not used because it gives shadow to box not content */
+    stroke-opacity: 0;
+
+}
+.card2:hover .featureCard2Icon{
+    background: linear-gradient(188.57deg, #2095ff -16.05%, #6416ff 116.32%);
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.4);
+}
+
+#InstantSettlements{
+    background-image: url(./Images/instant-settlement-bg.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+    transition: transform 175ms ease-in,opacity 175ms ease-in,-webkit-transform 175ms ease-in;
+    
+   
+}
+#InstantSettlements:hover{
+    background-image: url(./Images/instant-settlement-bghover.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    transform: scale(1.05);
+}
+
+#UPIAutoPay{
+    background-image: url(./Images/upi-autopay-bg.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+    transition: transform 175ms ease-in,opacity 175ms ease-in,-webkit-transform 175ms ease-in;
+    
+}
+#UPIAutoPay:hover{
+    background-image: url(./Images/upi-autopay-hoverbg.svg);
+    background-position: 0px 0px;
+    background-size: cover;
+    transform: scale(1.05);
+}
+
+#PaymentButton{
+    background-image: url(./Images/paymentButton_bg.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+    transition: transform 175ms ease-in,opacity 175ms ease-in,-webkit-transform 175ms ease-in;
+}
+#PaymentButton:hover{
+    background-image: url(./Images/paymentButton_hover_bg.svg);
+    background-position: 0px 0px;
+    background-size: cover;
+    transform: scale(1.05);
+}
+
+
+#QRCode{
+    background-image: url(./Images/QRCode_bg.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+    transition: transform 175ms ease-in,opacity 175ms ease-in,-webkit-transform 175ms ease-in;
+}
+#QRCode:hover{
+    background-image: url(./Images/qRCode_bg_hover.svg);
+    background-position: 0px 0px;
+    background-size: cover;
+    transform: scale(1.05);
+   
+}
+
+#MagicCheckout{
+    background-image: url(https://razorpay.com/build/browser/static/unregistered-bg.b750e0f6.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+    transition: transform 175ms ease-in,opacity 175ms ease-in,-webkit-transform 175ms ease-in;
+}
+#MagicCheckout:hover{
+    background-image: url(https://razorpay.com/build/browser/static/unregistered-hover.d7fc0c2c.svg);
+    background-position: 0px 0px;
+    background-size: cover;
+    transform: scale(1.05);
+}
+
+/* Features */
+#Features{
+    background-image: url(./Images/core-features-sectionBg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Get Started */
+.gradient1{
+    background: linear-gradient(180deg,#f4f8ff,#fff0);
+}
+.gradient2{
+    background: linear-gradient(0deg,#f4f8ff,#fff0);
+}
+/* Animation */
+
+.companiesList1{
+animation: primary 20s linear infinite;
+}
+.companiesList2{
+    animation: secondary 20s linear infinite;    
+}
+/* @keyframes primary {
+   from{
+    top: 0%;
+   } 
+   to{
+    top: -100%;
+   }
+}
+
+@keyframes secondary {
+    from{
+     top: 100%;
+    } 
+    to{
+     top: 0%;
+    }
+ } */
+
+ @keyframes primary {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes secondary {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/* Testimonial */
+#quote::before{
+    content: "";
+    width: 35px;
+    height: 40px;
+    background-image:url(./Images/quotes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -1.5rem;
+}
+
+/* CTA Section */
+#CTA{
+    background-image: url(./Images/CTABg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+/* Footer */
+footer{
+    background: linear-gradient(to right, #eef9fe, #edf7ff);
+}
+#link a{
+    color:#0b72e7;
+    transition: all 0.15s ease-out;
+    
+
+}
+
+#link a:hover{
+    color: #344a6c;
+   
+}
